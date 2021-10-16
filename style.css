@@ -1,0 +1,186 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900 &display=swap');
+*
+	
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+body
+{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+	maxgin: 50px;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1.8fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0);
+	
+}
+
+.container .left_side
+{
+	position: relative;
+/*	background: #003147;*/
+/*	background:#811F21;*/
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,180,0,1) 90%); 
+	padding: 40px;
+	border-right: 6px solid #811F21;
+}
+
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #811F21;
+	
+}
+
+.profileText .imgBx
+{
+ 	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profileText h2
+{
+	margin-top: 20px;
+	color: #811F21;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+	
+}
+
+.profileText h2 span
+{
+	font-size: 0.8em;
+	font-weight: 600;
+	text-transform: none;
+	
+}
+
+.contactInfo
+{
+	padding-top: 20px;
+	border-bottom: 2px solid #811F21;
+}
+.title
+{
+	color: #811F21;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.contactInfo ul
+{
+	position: relative;
+	
+}
+.contactInfo ul li
+{
+	position: relative;
+	list-style: none;	
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+/*	display: inline-block;*/
+	width: 30px;
+	font-size: 18px;
+	color: #811F21;
+}
+
+.contactInfo ul li span
+{
+	color: #811F21;
+	font-weight: 300;
+}
+
+.contactInfoEducation
+{
+	padding-top: 20px;
+/*	border-bottom: 2px solid #811F21;*/
+}
+.title
+{
+	color: #811F21;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.contactInfoEducation ul
+{
+	position: relative;
+	
+}
+.contactInfoEducation ul li
+{
+	position: relative;
+	list-style: none;	
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contactInfoEducation ul li .icon
+{
+/*	display: inline-block;*/
+	width: 30px;
+	font-size: 18px;
+	color: #811F21;
+}
+
+.contactInfoEducation ul li span
+{
+	color: #811F21;
+	font-weight: 300;
+}
+
+
+
+.container .right_side
+{
+	position: relative;
+	background: rgb(255,255,255);
+/*	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,200,0,1) 90%); */
+	padding: 40px;
+}
