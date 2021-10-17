@@ -13,7 +13,7 @@
 
 body
 {
-	background: lightblue;
+	background: #191923;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,26 +23,43 @@ body
 .container
 {
 	position: relative;
-	width: 100%;
-	maxgin: 50px;
-	max-width: 2000px;
-	min-height: 2000px;
-	background: #fff;
+	/* width: 100%; */
+	/* maxgin: 50px; */
+	min-width: 80vw;
+	min-height: 95vh;
+	max-width: 100vw;
+	max-height: 100vh;
+	background: #1E1E28;
 	display: grid;
-	grid-template-columns: 1fr 1.8fr;
+	height: 100%;
+	/* padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px; */
+/*
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottomg: 5px;
+*/
+	grid-template-columns: 1fr 4fr;
 	box-shadow: 0 35px 55px rgba(0,0,0,0);
 	
 }
+
+
+
+a:link{text-decoration: none;}
 
 .container .left_side
 {
 	position: relative;
 /*	background: #003147;*/
 /*	background:#811F21;*/
-	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,180,0,1) 90%); 
-	padding: 40px;
-	border-right: 6px solid #811F21;
+	background: #20202A;
+	/* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,180,0,1) 90%);  */
+	/* background: #23232F; */
+	/* padding: 40px; */
+	/* border: 1px solid #811F21; */
 }
 
 .profileText
@@ -51,16 +68,21 @@ body
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 10px;
-	border-bottom: 2px solid #811F21;
-	
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	/* border-bottom: 2px solid #811F21; */
+	background: #23232F;
 }
+
+a:link{text-decoration: none;}
 
 .profileText .imgBx
 {
  	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -77,15 +99,33 @@ body
 
 .profileText h2
 {
-	margin-top: 20px;
-	color: #811F21;
-	font-size: 1.5em;
-	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	/* margin-top: 15px;
+	margin-bottom: 5px; */
+	color: white;
+	font-size: 1.2em;
+	/* text-transform: uppercase; */
 	text-align: center;
 	font-weight: 600;
-	line-height: 1.4em;
+	cursor:pointer; 
+	/* line-height: 1.4em; */
 	
 }
+
+.profileText h3
+{
+	/* margin-top: 20px; */
+	color: #8C8C8E;
+	font-size: 0.8em;
+	/* text-transform: uppercase; */
+	text-align: center;
+	font-weight: 450;
+	/* line-height: 1.4em; */
+	
+}
+.profileText h2:hover{ color: gold;}
+
 
 .profileText h2 span
 {
@@ -95,92 +135,193 @@ body
 	
 }
 
-.contactInfo
+/* .profileText .art-scroll-frame{height:calc(100vh - 62px)}.scrollbar-track{visibility:hidden;opacity:0;pointer-events:none} */
+
+
+
+.contactInfo 
+{
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 2px solid #404048;
+}
+
+.contactInfo .text1
+{
+	color: gold;
+	font-weight: 400;
+	line-height: 1px;
+	text-decoration: none;
+	float: left;
+	clear: left;
+}
+
+.contactInfo .text2
+{
+	color: gold;
+	font-weight: 100;
+	line-height: 1px;
+	text-decoration: none;
+	float: right;
+	clear: right;
+}
+
+.eduInfo 
+{
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 2px solid #404048;
+}
+
+
+.eduInfo .text1
+{
+	color: gold;
+	font-weight: 450;
+	line-height: 1px;
+	text-decoration: none;
+	float: left;
+	clear: left;
+}
+
+.eduInfo .text2
+{
+	color: gold;
+	font-weight: 450;
+	line-height: 1px;
+	text-decoration: none;
+	float: right;
+	clear: right;
+}
+
+.eduInfo .text3
+{
+	color: gold;
+	font-weight: 50;
+	line-height: 1px;
+	text-decoration: none;
+	float: left;
+	clear: left;
+}
+
+
+a:link{text-decoration: none;}
+
+.scrollbar
+{
+	position: relative;
+	height: 30vh;
+	display: flex;
+	overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollbar::-webkit-scrollbar{
+	width:0;
+	height:0;
+}
+
+.knowledgeInfo 
 {
 	padding-top: 20px;
-	border-bottom: 2px solid #811F21;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #404048;
 }
-.title
+
+
+.knowledgeInfo .text1
 {
-	color: #811F21;
-	text-transform: uppercase;
+	color: gold;
 	font-weight: 600;
-	letter-spacing: 1px;
-	margin-bottom: 10px;
+	line-height: 1px;
+	text-decoration: none;
+	float: left;
+	clear: left;
 }
-.contactInfo ul
+
+
+.knowledgeInfo ul {
+	list-style: none;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #404048;
+  }
+  
+  ul li:before {
+	content: '✓';
+	color: gold;
+  }
+
+.knowledgeInfo li span
 {
+	color: gold;
+	font-weight: 400;
+	line-height: 1px;
+	text-decoration: none;
 	position: relative;
+	left: 10px;
 	
 }
-.contactInfo ul li
+
+.links
 {
-	position: relative;
-	list-style: none;	
-	margin: 10px 0;
-	cursor: pointer;
+	position: absolute;
+	bottom:0;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 87px;
+	padding-right: 87px;
+
+	/* border-bottom: 2px solid #811F21; */
+	background: #26262F;
 }
 
-.contactInfo ul li .icon
+a:link{text-decoration: none;}
+a {color: inherit;}
+
+#linksgrid
 {
-/*	display: inline-block;*/
-	width: 30px;
-	font-size: 18px;
-	color: #811F21;
+	/* padding: .5em; */
+    display: inline-block;
+	word-spacing: 3em;
 }
 
-.contactInfo ul li span
+.links .fa-linkedin
 {
-	color: #811F21;
-	font-weight: 300;
-}
-
-.contactInfoEducation
-{
-	padding-top: 20px;
-/*	border-bottom: 2px solid #811F21;*/
-}
-.title
-{
-	color: #811F21;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin-bottom: 10px;
-}
-.contactInfoEducation ul
-{
-	position: relative;
+	color: white;
 	
 }
-.contactInfoEducation ul li
+
+.links .fa-linkedin:hover {color: gold;}
+
+.links .fa-dribbble
 {
-	position: relative;
-	list-style: none;	
-	margin: 10px 0;
-	cursor: pointer;
+	color: white;
 }
 
-.contactInfoEducation ul li .icon
+.links .fa-dribbble:hover {color: gold;}
+
+.links .fa-graduation-cap
 {
-/*	display: inline-block;*/
-	width: 30px;
-	font-size: 18px;
-	color: #811F21;
+	color: white;
 }
 
-.contactInfoEducation ul li span
-{
-	color: #811F21;
-	font-weight: 300;
-}
-
-
+.links .fa-graduation-cap:hover {color: gold;}
 
 .container .right_side
 {
 	position: relative;
-	background: rgb(255,255,255);
+	background: #1E1E28;
 /*	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,200,0,1) 90%); */
 	padding: 40px;
 }
