@@ -18,6 +18,8 @@ body
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	min-width: 100vw;
+	padding: 20px;
 }
 
 .container
@@ -25,13 +27,17 @@ body
 	position: relative;
 	/* width: 100%; */
 	/* maxgin: 50px; */
-	min-width: 80vw;
+	min-width: 60vw;
 	min-height: 95vh;
-	max-width: 100vw;
-	max-height: 100vh;
+	max-width: 80vw;
+	max-height: 95vh;
 	background: #1E1E28;
 	display: grid;
 	height: 100%;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 	/* padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 30px;
@@ -53,6 +59,7 @@ a:link{text-decoration: none;}
 .container .left_side
 {
 	position: relative;
+	min-width: 350px;
 /*	background: #003147;*/
 /*	background:#811F21;*/
 	background: #20202A;
@@ -160,7 +167,7 @@ a:link{text-decoration: none;}
 
 .contactInfo .text2
 {
-	color: gold;
+	color: white;
 	font-weight: 100;
 	line-height: 1px;
 	text-decoration: none;
@@ -200,7 +207,7 @@ a:link{text-decoration: none;}
 
 .eduInfo .text3
 {
-	color: gold;
+	color: white;
 	font-weight: 50;
 	line-height: 1px;
 	text-decoration: none;
@@ -213,26 +220,29 @@ a:link{text-decoration: none;}
 
 .scrollbar
 {
-	position: relative;
+	position: absolute;
 	height: 30vh;
-	display: flex;
+	/* display: flex; */
 	overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+	
+	
 }
 
-.scrollbar::-webkit-scrollbar{
+/* .scrollbar::-webkit-scrollbar{
 	width:0;
 	height:0;
-}
+} */
+
 
 .knowledgeInfo 
 {
 	padding-top: 20px;
 	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	border-bottom: 2px solid #404048;
+	/* padding-right: 20px; */
+	/* padding-bottom: 20px; */
+	/* border-bottom: 2px solid #404048; */
 }
 
 
@@ -249,18 +259,18 @@ a:link{text-decoration: none;}
 
 .knowledgeInfo ul {
 	list-style: none;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	border-bottom: 2px solid #404048;
   }
   
   ul li:before {
 	content: '✓';
-	color: gold;
+	color: white;
   }
 
 .knowledgeInfo li span
 {
-	color: gold;
+	color: white;
 	font-weight: 400;
 	line-height: 1px;
 	text-decoration: none;
@@ -268,6 +278,63 @@ a:link{text-decoration: none;}
 	left: 10px;
 	
 }
+
+.knowledgeInfo .text2
+{
+	color: gold;
+	font-weight: 600;
+	line-height: 1px;
+	text-decoration: none;
+	float: left;
+	clear: left;
+}
+
+
+.knowledgeInfo .text2 .list2 {
+	list-style: none;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #404048;
+  }
+  
+ .knowledgeInfo .text2 ul li:before {
+	content: '✓';
+	color: white;
+  }
+
+.knowledgeInfo .text2 li span
+{
+	color: white;
+	font-weight: 400;
+	line-height: 1px;
+	text-decoration: none;
+	position: relative;
+	left: 10px;
+	
+}
+
+.knowledgeInfo .text3
+{
+	color: white;
+	text-decoration: none;	
+	text-shadow: 0 0 4px #fff;
+	
+	/* padding-top: -1px; */
+}
+
+
+.knowledgeInfo .text3 h6
+{
+	font-size: medium;
+	/* line-height: 1px; */
+	text-align: center;
+	
+	
+}
+
+
+.knowledgeInfo .text3 h6:hover{ color: gold; text-shadow: 0 0 4px gold;}
+
+
 
 .links
 {
@@ -317,6 +384,8 @@ a {color: inherit;}
 }
 
 .links .fa-graduation-cap:hover {color: gold;}
+
+
 
 .container .right_side
 {
